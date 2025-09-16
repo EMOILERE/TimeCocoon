@@ -1,0 +1,1 @@
+<view style="transform:scaleY(-1);"><chat-item vue-id="6245c000-3" item="{{item}}" bind:__l="__l"></chat-item></view>

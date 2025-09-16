@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "专注失败分析",
+  "usingComponents": {
+    "theme-background": "/components/theme-background/theme-background"
+  }
+}

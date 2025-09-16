@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的成就",
+  "usingComponents": {
+    "theme-background": "/components/theme-background/theme-background"
+  }
+}

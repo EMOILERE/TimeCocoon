@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "专注帮助",
+  "usingComponents": {
+    "theme-background": "/components/theme-background/theme-background"
+  }
+}

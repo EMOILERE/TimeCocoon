@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "数据可视化",
+  "usingComponents": {
+    "task-column": "/pages/statistics/components/taskColumn",
+    "task-pie": "/pages/statistics/components/taskPie",
+    "task-line": "/pages/statistics/components/taskLine",
+    "mood-radar": "/pages/statistics/components/moodRadar",
+    "focus-area": "/pages/statistics/components/focusArea",
+    "focus-line": "/pages/statistics/components/focusLine"
+  }
+}

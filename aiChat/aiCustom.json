@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "自定义AI助手",
+  "usingComponents": {
+    "theme-background": "/components/theme-background/theme-background"
+  }
+}

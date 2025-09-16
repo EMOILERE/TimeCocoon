@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/statistics/components/taskPie"],{"048a":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=n("2953"),r={data:function(){return{chartData:{},opts:{color:["#91CB74","#FAC858"],padding:[5,5,5,5],enableScroll:!1,legend:{lineHeight:20},extra:{pie:{activeOpacity:.5,activeRadius:10,offsetAngle:0,labelWidth:15,border:!1,borderWidth:3,borderColor:"#FFFFFF"}}}}},onReady:function(){this.getServerData()},methods:{getServerData:function(){var t=this;(0,a.taskPie)().then((function(e){var n={series:[{data:e.result.series}]};t.chartData=JSON.parse(JSON.stringify(n))}))}}};e.default=r},"1b99":function(t,e,n){},"30bd":function(t,e,n){"use strict";var a=n("1b99"),r=n.n(a);r.a},7387:function(t,e,n){"use strict";n.r(e);var a=n("90a2"),r=n("911e");for(var i in r)["default"].indexOf(i)<0&&function(t){n.d(e,t,(function(){return r[t]}))}(i);n("30bd");var u=n("828b"),o=Object(u["a"])(r["default"],a["b"],a["c"],!1,null,"1bbe6721",null,!1,a["a"],void 0);e["default"]=o.exports},"90a2":function(t,e,n){"use strict";n.d(e,"b",(function(){return r})),n.d(e,"c",(function(){return i})),n.d(e,"a",(function(){return a}));var a={qiunDataCharts:function(){return Promise.all([n.e("common/vendor"),n.e("uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts")]).then(n.bind(null,"3f77"))}},r=function(){var t=this.$createElement;this._self._c},i=[]},"911e":function(t,e,n){"use strict";n.r(e);var a=n("048a"),r=n.n(a);for(var i in a)["default"].indexOf(i)<0&&function(t){n.d(e,t,(function(){return a[t]}))}(i);e["default"]=r.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'pages/statistics/components/taskPie-create-component',
+    {
+        'pages/statistics/components/taskPie-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('df3c')['createComponent'](__webpack_require__("7387"))
+        })
+    },
+    [['pages/statistics/components/taskPie-create-component']]
+]);

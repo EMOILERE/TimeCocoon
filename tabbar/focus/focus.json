@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "时茧",
+  "usingComponents": {
+    "theme-background": "/components/theme-background/theme-background"
+  }
+}

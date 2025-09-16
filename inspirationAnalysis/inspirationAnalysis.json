@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "灵感可行性分析",
+  "usingComponents": {
+    "theme-background": "/components/theme-background/theme-background"
+  }
+}

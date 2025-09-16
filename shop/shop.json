@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "平行宇宙商店",
+  "usingComponents": {
+    "theme-background": "/components/theme-background/theme-background"
+  }
+}

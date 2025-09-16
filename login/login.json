@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "theme-background": "/components/theme-background/theme-background",
+    "tui-label": "/components/thorui/tui-label/tui-label",
+    "tui-checkbox": "/components/thorui/tui-checkbox/tui-checkbox"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "AI助手",
+  "usingComponents": {
+    "aiChat-z-paging-cell": "/pages/aiChat/aiChat-z-paging-cell",
+    "theme-background": "/components/theme-background/theme-background",
+    "z-paging": "/uni_modules/z-paging/components/z-paging/z-paging",
+    "chat-item": "/components/chat-item/chat-item",
+    "chat-input-bar": "/components/chat-input-bar/chat-input-bar"
+  }
+}

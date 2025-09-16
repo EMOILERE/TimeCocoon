@@ -1,0 +1,25 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "Wechat": {
+    "WechatAppId": "1",
+    "WechatAppSecret": "1",
+    "WxOpenAppId": "wx71565885274a6a50",
+    "WxOpenAppSecret": "158aad4ef7c3f1deacaa5402273dad6e"
+  },
+  "WechatPay": {
+    "AppId": "1",
+    "MerchantId": "1",
+    "MerchantV3Secret": "1",
+    "MerchantCertificateSerialNumber": "1",
+    "MerchantCertificatePrivateKey": "1",
+    "MerchantPublicKeyId": "1",
+    "MerchantPublicKey": "1"
+  },
+  "PayCallBack": {
+    "WechatPayUrl": "1",
+    "WechatRefundUrl": "1",
+    "AlipayUrl": "",
+    "AlipayRefundUrl": ""
+  }
+}

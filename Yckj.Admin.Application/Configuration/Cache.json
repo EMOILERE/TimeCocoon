@@ -1,0 +1,35 @@
+﻿{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "Cache": {
+    "Prefix": "work_",
+    "CacheType": "Redis",
+    "Redis": {
+      "Configuration": "server=127.0.0.1:6379;password=;db=1;",
+      "Prefix": "work_",
+      "MaxMessageSize": "1048576"
+    }
+  },
+  "Cluster": {
+    "Enabled": false,
+    "ServerId": "work_",
+    "ServerIp": "",
+    "SignalR": {
+      "RedisConfiguration": "127.0.0.1:6379,ssl=false,password=,defaultDatabase=5",
+      "ChannelPrefix": "signalrPrefix_"
+    },
+    "DataProtecteKey": "work:DataProtection-Keys",
+    "IsSentinel": false,
+    "SentinelConfig": {
+      "DefaultDb": "4",
+      "EndPoints": [
+        // "10.10.0.124:26380"
+      ],
+      "MainPrefix": "work:",
+      "Password": "123456",
+      "SentinelPassword": "work",
+      "ServiceName": "work",
+      "SignalRChannelPrefix": "signalR:"
+    }
+  }
+}

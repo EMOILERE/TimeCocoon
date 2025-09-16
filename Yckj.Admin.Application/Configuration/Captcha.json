@@ -1,0 +1,28 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "CaptchaOptions": {
+    "CaptchaType": 10,
+    "CodeLength": 1,
+    "ExpirySeconds": 60,
+    "IgnoreCase": true,
+    "StoreageKeyPrefix": "",
+    "ImageOption": {
+      "Animation": true,
+      "FontSize": 36,
+      "Width": 150,
+      "Height": 50,
+      "BubbleMinRadius": 5,
+      "BubbleMaxRadius": 10,
+      "BubbleCount": 3,
+      "BubbleThickness": 1.0,
+      "InterferenceLineCount": 3,
+      "FontFamily": "kaiti",
+      "FrameDelay": 300,
+      "BackgroundColor": "#ffffff",
+      "ForegroundColors": "",
+      "Quality": 100,
+      "TextBold": true
+    }
+  }
+}

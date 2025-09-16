@@ -1,0 +1,117 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  // IP限流配置
+  "IpRateLimiting": {
+    "EnableEndpointRateLimiting": true,
+
+    "StackBlockedRequests": false,
+
+    "RealIpHeader": "X-Real-IP",
+
+    "ClientIdHeader": "X-ClientId",
+
+    "IpWhitelist": [],
+
+    "EndpointWhitelist": [],
+
+    "ClientWhitelist": [],
+    "QuotaExceededResponse": {
+      "Content": "{{\"code\":429,\"type\":\"error\",\"message\":\"访问过于频繁,请稍后重试!\",\"result\":null,\"extras\":null}}",
+      "ContentType": "application/json",
+      "StatusCode": 429
+    },
+
+    "HttpStatusCode": 429,
+
+    "GeneralRules": [
+
+      {
+        "Endpoint": "*",
+        "Period": "1s",
+        "Limit": 10
+      },
+
+      {
+        "Endpoint": "*",
+        "Period": "1m",
+        "Limit": 600
+      },
+
+      {
+        "Endpoint": "*",
+        "Period": "1h",
+        "Limit": 3600
+      },
+
+      {
+        "Endpoint": "*",
+        "Period": "1d",
+        "Limit": 86400
+      }
+    ]
+  },
+  "IpRateLimitPolicies": {
+    "IpRules": [
+      {
+        "Ip": "XXX.XXX.XXX.XXX",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1s",
+            "Limit": 10
+          },
+          {
+            "Endpoint": "*",
+            "Period": "1m",
+            "Limit": 600
+          }
+        ]
+      }
+    ]
+  },
+
+  "ClientRateLimiting": {
+    "EnableEndpointRateLimiting": true,
+    "ClientIdHeader": "X-ClientId",
+    "EndpointWhitelist": [],
+    "ClientWhitelist": [],
+    "QuotaExceededResponse": {
+      "Content": "{{\"code\":429,\"type\":\"error\",\"message\":\"访问人数过多,请稍后重试!\",\"result\":null,\"extras\":null}}",
+      "ContentType": "application/json",
+      "StatusCode": 429
+    },
+    "HttpStatusCode": 429,
+    "GeneralRules": [
+      {
+        "Endpoint": "*",
+        "Period": "1s",
+        "Limit": 10
+      },
+      {
+        "Endpoint": "*",
+        "Period": "1m",
+        "Limit": 600
+      }
+    ]
+  },
+  "ClientRateLimitPolicies": {
+    "ClientRules": [
+      {
+        "ClientId": "xxx-xxx",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1s",
+            "Limit": 10
+          },
+          {
+            "Endpoint": "*",
+            "Period": "1m",
+            "Limit": 600
+          }
+        ]
+      }
+    ]
+  }
+}

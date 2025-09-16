@@ -1,0 +1,45 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "Urls": "http://localhost:5005",
+
+  "AllowedHosts": "*",
+
+  "AppSettings": {
+    "InjectSpecificationDocument": true
+  },
+  "DynamicApiControllerSettings": {
+    //"DefaultRoutePrefix": "api",
+    "CamelCaseSeparator": "",
+    "SplitCamelCase": false,
+    "LowercaseRoute": false,
+    "AsLowerCamelCase": true,
+    "KeepVerb": false,
+    "KeepName": false
+  },
+  "FriendlyExceptionSettings": {
+    "DefaultErrorMessage": "系统异常，请联系管理员",
+    "ThrowBah": true,
+    "LogError": false
+  },
+  "LocalizationSettings": {
+    "SupportedCultures": [ "zh-CN", "en" ],
+    "DefaultCulture": "zh-CN",
+    "DateTimeFormatCulture": "zh-CN"
+  },
+  "CorsAccessorSettings": {
+    "WithExposedHeaders": [ "Content-Disposition", "X-Pagination", "access-token", "x-access-token" ],
+    "SignalRSupport": true
+  },
+  "SnowId": {
+    "WorkerId": 1,
+    "WorkerIdBitLength": 2,
+    "SeqBitLength": 6,
+    "WorkerPrefix": "work_"
+  },
+  "Cryptogram": {
+    "CryptoType": "SM2",
+    "PublicKey": "04D6705E4B5B72EE4466FEF4B6C0F620FB7351726757FA8C2B27DEE5F664714730E01559C330B2D60026A93A5110CC46CAB2A3875E07904337FF046AA58D575492",
+    "PrivateKey": "09461ED4CED97103C301AE32D9CE6F4ABC2AEA48C1D56ECD4E30748F4E4CBF4D"
+  }
+}

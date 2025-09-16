@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+		<PublishReadyToRunComposite>true</PublishReadyToRunComposite>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+		<UserSecretsId>ad9369d1-f29b-4f8f-a7df-8b4d7aa0726b</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="logs\**" />
+		<Compile Remove="publish\**" />
+		<Compile Remove="wwwroot\images\**" />
+		<Compile Remove="wwwroot\style\**" />
+		<Content Remove="logs\**" />
+		<Content Remove="publish\**" />
+		<Content Remove="wwwroot\images\**" />
+		<Content Remove="wwwroot\style\**" />
+		<EmbeddedResource Remove="logs\**" />
+		<EmbeddedResource Remove="publish\**" />
+		<EmbeddedResource Remove="wwwroot\images\**" />
+		<EmbeddedResource Remove="wwwroot\style\**" />
+		<None Remove="logs\**" />
+		<None Remove="publish\**" />
+		<None Remove="wwwroot\images\**" />
+		<None Remove="wwwroot\style\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Update="wwwroot\Avatar\**" CopyToPublishDirectory="Never" />
+		<Content Update="wwwroot\logs\**" CopyToPublishDirectory="Never" />
+		<Content Update="wwwroot\upload\**" CopyToPublishDirectory="Never" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Yckj.Admin.db" />
+		<None Remove="sensitive-words.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="sensitive-words.txt">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Yckj.Admin.Web.Core\Yckj.Admin.Web.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="wwwroot\Template\Dto.cs.vm" />
+	  <None Include="wwwroot\Template\Entity.cs.vm" />
+	  <None Include="wwwroot\Template\Input.cs.vm" />
+	  <None Include="wwwroot\Template\Output.cs.vm" />
+	  <None Include="wwwroot\Template\SeedData.cs.vm" />
+	  <None Include="wwwroot\Template\Service.cs.vm" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Controllers\" />
+	</ItemGroup>
+
+</Project>

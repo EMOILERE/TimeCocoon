@@ -1,0 +1,25 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "SMS": {
+    "Aliyun": {
+      "AccessKeyId": "",
+      "AccessKeySecret": "",
+      "SignName": "",
+      "TemplateCode": ""
+    },
+    "Tencent": {
+      "SecretId": "1",
+      "SecretKey": "1",
+      "SmsSdkAppId": "1",
+      "SignName": "1",
+      "Region": "1",
+      "TemplateId": "1"
+    },
+    "Provider": "Tencent",
+    "ValidTime": 10, //验证码十分钟内有效
+    "Interval": 30, //距离上一次间隔
+    "LimitNumber": 3, //限定时间内发送次数
+    "LimitDuration": 120 //限定期间内(秒)
+  }
+}

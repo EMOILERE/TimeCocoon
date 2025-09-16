@@ -1,0 +1,22 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "Upload": {
+    "Project": "",
+    "Path": "Upload/{FileName}/{yyyy}/{MM}/{dd}",
+    "MaxSize": 20971520, // 文件最大限制1024*1024*20
+    "ContentType": [ "image/jpg", "image/png", "image/jpeg", "image/gif", "image/bmp", "text/plain", "application/pdf", "application/msword", "application/vnd.ms-excel", "application/vnd.ms-powerpoint", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "video/mp4" ],
+    "EnableMd5": true
+  },
+  "OSSProvider": {
+    "IsEnable": false,
+    "Provider": "1",
+    "Endpoint": "1",
+    "Region": "1",
+    "AccessKey": "1",
+    "SecretKey": "1",
+    "IsEnableHttps": true,
+    "IsEnableCache": true,
+    "Bucket": "1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "componentGenerics": {
+    "scoped-slots-refresher": true,
+    "scoped-slots-cell": true,
+    "scoped-slots-chatLoading": true,
+    "scoped-slots-empty": true
+  },
+  "component": true,
+  "usingComponents": {
+    "z-paging-empty": "/uni_modules/z-paging/components/z-paging-empty/z-paging-empty",
+    "z-paging-refresh": "/uni_modules/z-paging/components/z-paging/components/z-paging-refresh",
+    "z-paging-load-more": "/uni_modules/z-paging/components/z-paging/components/z-paging-load-more",
+    "z-paging-empty-view": "/uni_modules/z-paging/components/z-paging-empty/z-paging-empty"
+  }
+}
